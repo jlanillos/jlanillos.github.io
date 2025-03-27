@@ -1,45 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javier Lanillos-Manchón</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Javier Lanillos-Manchón</h1>
-        <p>Bioinformatician, Postdoctoral Researcher | Momentum Program | IBB-CSIC</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#skills">Skills</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <img src="images/profilepic.jpg" alt="Javier Lanillos-Manchón">
-            <p>Short description about yourself (to be added).</p>
-        </section>
-        <section id="research">
-            <h2>Research</h2>
-            <p>Information about your research interests and projects.</p>
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>List of your publications.</p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>Overview of your key skills.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Javier Lanillos-Manchón. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: #AFCBD5;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Estilos para todos los enlaces */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Sección principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: justify;
+}
+
+#presentacion {
+    position: relative;
+    text-align: justify;
+}
+
+#presentacion img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    float: right;
+    margin: 20px;
+}
+
+/* Formulario de contacto */
+form label, 
+form input, 
+form textarea, 
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: calc(100% - 10px);
+    height: 150px;
+}
+
+form button {
+    width: auto;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #AFCBD5;
+    color: gray;
+    margin-top: 40px;
+}
