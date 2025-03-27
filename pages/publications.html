@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicaciones - Javier Lanillos-Manchón</title>
+    <title>Publications - Javier Lanillos-Manchón</title>
     <link rel="stylesheet" href="../css/style.css">
     <style>
         /* Basic Dropdown Styling */
         .dropdown {
-            background-color: #388e3c;
-            color: white;
+            background-color: transparent; /* Remove the green background */
+            color: #388e3c; /* Title color same as header */
             padding: 10px;
             cursor: pointer;
             width: 100%;
             text-align: left;
             border: none;
             font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
         }
 
         .dropdown-content {
-            display: none;
-            background-color: #f4f4f4;
+            display: none; /* Start hidden */
+            background-color: #f4f4f4; /* Light background for dropdown */
             padding: 10px;
             border-radius: 5px;
             margin-top: 10px;
@@ -41,12 +43,12 @@
 
         /* Optional: style to indicate expanded sections */
         .expanded {
-            background-color: #2e7d32;
+            background-color: #e7f5e7; /* Light green when expanded */
         }
 
-        /* Change dropdown titles color */
-        .dropdown {
-            color: #388e3c;
+        /* Add some padding to the main content */
+        main {
+            padding: 20px;
         }
     </style>
 </head>
@@ -68,85 +70,3 @@
             <h2>Publicaciones Científicas</h2>
 
             <!-- Dropdown for Highlighted Publications -->
-            <button class="dropdown">Highlighted Publications</button>
-            <div class="dropdown-content">
-                <article>
-                    <ul>
-                        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6691382/">Integrative multi-omics analysis identifies a prognostic miRNA signature and a targetable miR-21-3p/TSC2/mTOR axis in metastatic pheochromocytoma/paraganglioma</a></li>
-                        <p>This study uncovers a miRNA signature linked to prognosis in metastatic pheochromocytoma/paraganglioma and identifies the miR-21-3p/TSC2/mTOR axis as a potential therapeutic target.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">Genomic and immune landscape of metastatic pheochromocytoma and paraganglioma</a></li>
-                        <p>This research delineates the genomic alterations and immune profiles characteristic of metastatic pheochromocytoma and paraganglioma.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">Molecular characterization of chromophobe renal cell carcinoma reveals mTOR pathway alterations in patients with poor outcome</a></li>
-                        <p>This study identifies mTOR pathway alterations in chromophobe renal cell carcinoma patients associated with unfavorable prognoses.</p>
-                    </ul>
-                </article>
-            </div>
-
-            <!-- Dropdown for Other Collaborations -->
-            <button class="dropdown">Other Collaborations</button>
-            <div class="dropdown-content">
-                <article>
-                    <ul>
-                        <li><a href="#">Hsa-miR-139-5p is a prognostic thyroid cancer marker involved in HNRNPF-mediated alternative splicing</a></li>
-                        <p>This research highlights hsa-miR-139-5p as a prognostic marker in thyroid cancer, implicating its role in alternative splicing through HNRNPF.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">PTEN expression and mutations in TSC1, TSC2, and MTOR are associated with response to rapalogs in patients with renal cell carcinoma</a></li>
-                        <p>This study associates PTEN expression and mutations in TSC1, TSC2, and MTOR with the therapeutic response to rapalogs in renal cell carcinoma patients.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">Sunitinib and Evofosfamide (TH-302) in Systemic Treatment-Naïve Patients with Grade 1/2 Metastatic Pancreatic Neuroendocrine Tumors: The GETNE-1408 Trial</a></li>
-                        <p>This clinical trial evaluates the efficacy of combining Sunitinib and Evofosfamide in treatment-naïve patients with metastatic pancreatic neuroendocrine tumors.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">Prevalence of pathogenic germline variants in patients with metastatic renal cell carcinoma</a></li>
-                        <p>This research investigates the frequency of pathogenic germline variants in individuals diagnosed with metastatic renal cell carcinoma.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">Clinical pharmacogenetic analysis in 5,001 individuals with diagnostic Exome Sequencing data</a></li>
-                        <p>This study conducts a pharmacogenetic analysis on exome sequencing data from 5,001 individuals to inform personalized medicine approaches.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">Novel DNMT3A Germline Variant in a Patient with Multiple Paragangliomas and Papillary Thyroid Carcinoma</a></li>
-                        <p>This case report identifies a novel germline DNMT3A mutation in a patient presenting with multiple paragangliomas and papillary thyroid carcinoma.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">CD133 expression in medullary thyroid cancer cells identifies patients with poor prognosis</a></li>
-                        <p>This research associates CD133 expression in medullary thyroid cancer cells with poorer patient outcomes.</p>
-                    </ul>
-                </article>
-
-                <article>
-                    <ul>
-                        <li><a href="#">Deubiquitinase USP9X loss sensitizes renal cancer cells to mTOR inhibition</a></li>
-                        <p>This study demonstrates that loss of USP9X increases renal cancer cells' sensitivity to mTOR inhibitors.</p>
-                    </ul>
-                </
