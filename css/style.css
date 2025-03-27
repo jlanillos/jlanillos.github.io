@@ -94,3 +94,7 @@ footer {
     color: gray;
     margin-top: 40px;
 }
+
+main ul li {
+    margin-bottom: 10px; /* Adds space between bullet points */
+}
