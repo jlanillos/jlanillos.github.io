@@ -5,6 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicaciones - Javier Lanillos-Manchón</title>
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Basic Dropdown Styling */
+        .dropdown {
+            background-color: #388e3c;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border: none;
+            font-size: 18px;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .dropdown-content article {
+            margin-bottom: 20px;
+        }
+
+        .dropdown-content a {
+            color: #388e3c;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover {
+            background-color: #2e7d32;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,81 +58,94 @@
 
     <main>
         <section>
-            <h2>Scientific Publications</h2>
-            
-            <article>
-                <h3>Integrative multi-omics analysis identifies a prognostic miRNA signature and a targetable miR-21-3p/TSC2/mTOR axis in metastatic pheochromocytoma/paraganglioma</h3>
-                <p>This study uncovers a miRNA signature linked to prognosis in metastatic pheochromocytoma/paraganglioma and identifies the miR-21-3p/TSC2/mTOR axis as a potential therapeutic target.</p>
-            </article>
-            
-            <article>
-                <h3>Genomic and immune landscape of metastatic pheochromocytoma and paraganglioma</h3>
-                <p>This research delineates the genomic alterations and immune profiles characteristic of metastatic pheochromocytoma and paraganglioma.</p>
-            </article>
-            
-            <article>
-                <h3>Molecular characterization of chromophobe renal cell carcinoma reveals mTOR pathway alterations in patients with poor outcome</h3>
-                <p>This study identifies mTOR pathway alterations in chromophobe renal cell carcinoma patients associated with unfavorable prognoses.</p>
-            </article>
-            
-            <article>
-                <h3>Hsa-miR-139-5p is a prognostic thyroid cancer marker involved in HNRNPF-mediated alternative splicing</h3>
-                <p>This research highlights hsa-miR-139-5p as a prognostic marker in thyroid cancer, implicating its role in alternative splicing through HNRNPF.</p>
-            </article>
-            
-            <article>
-                <h3>PTEN expression and mutations in TSC1, TSC2, and MTOR are associated with response to rapalogs in patients with renal cell carcinoma</h3>
-                <p>This study associates PTEN expression and mutations in TSC1, TSC2, and MTOR with the therapeutic response to rapalogs in renal cell carcinoma patients.</p>
-            </article>
-            
-            <article>
-                <h3>Sunitinib and Evofosfamide (TH-302) in Systemic Treatment-Naïve Patients with Grade 1/2 Metastatic Pancreatic Neuroendocrine Tumors: The GETNE-1408 Trial</h3>
-                <p>This clinical trial evaluates the efficacy of combining Sunitinib and Evofosfamide in treatment-naïve patients with metastatic pancreatic neuroendocrine tumors.</p>
-            </article>
-            
-            <article>
-                <h3>Prevalence of pathogenic germline variants in patients with metastatic renal cell carcinoma</h3>
-                <p>This research investigates the frequency of pathogenic germline variants in individuals diagnosed with metastatic renal cell carcinoma.</p>
-            </article>
-            
-            <article>
-                <h3>Clinical pharmacogenetic analysis in 5,001 individuals with diagnostic Exome Sequencing data</h3>
-                <p>This study conducts a pharmacogenetic analysis on exome sequencing data from 5,001 individuals to inform personalized medicine approaches.</p>
-            </article>
-            
-            <article>
-                <h3>Novel DNMT3A Germline Variant in a Patient with Multiple Paragangliomas and Papillary Thyroid Carcinoma</h3>
-                <p>This case report identifies a novel germline DNMT3A mutation in a patient presenting with multiple paragangliomas and papillary thyroid carcinoma.</p>
-            </article>
-            
-            <article>
-                <h3>CD133 expression in medullary thyroid cancer cells identifies patients with poor prognosis</h3>
-                <p>This research associates CD133 expression in medullary thyroid cancer cells with poorer patient outcomes.</p>
-            </article>
-            
-            <article>
-                <h3>Deubiquitinase USP9X loss sensitizes renal cancer cells to mTOR inhibition</h3>
-                <p>This study demonstrates that loss of USP9X increases renal cancer cells' sensitivity to mTOR inhibitors.</p>
-            </article>
-            
-            <article>
-                <h3>Considerations on diagnosis and surveillance measures of PTEN hamartoma tumor syndrome: clinical and genetic study in a series of Spanish patients</h3>
-                <p>This research provides insights into the diagnosis and monitoring of PTEN hamartoma tumor syndrome through a clinical and genetic study of Spanish patients.</p>
-            </article>
-            
-            <article>
-                <h3>PBRM1 and KDM5C cooperate to define high-angiogenesis tumors and increased antiangiogenic response in renal cancer</h3>
-                <p>This study reveals that PBRM1 and KDM5C mutations characterize renal cancers with high angiogenesis and enhanced response to antiangiogenic therapies.</p>
-            </article>
-            
-            <article>
-                <h3>DLST mutations in pheochromocytoma and paraganglioma cause proteome hyposuccinylation and metabolic remodeling</h3>
-                <p>This research indicates that DLST mutations in pheochromocytoma and paraganglioma lead to reduced protein succinylation and metabolic changes.</p>
-            </article>
+            <h2>Publicaciones Científicas</h2>
+
+            <!-- Dropdown for Highlighted Publications -->
+            <div class="dropdown">
+                <h3>Highlighted Publications</h3>
+            </div>
+            <div class="dropdown-content">
+                <article>
+                    <h3>Integrative multi-omics analysis identifies a prognostic miRNA signature and a targetable miR-21-3p/TSC2/mTOR axis in metastatic pheochromocytoma/paraganglioma</h3>
+                    <p>This study uncovers a miRNA signature linked to prognosis in metastatic pheochromocytoma/paraganglioma and identifies the miR-21-3p/TSC2/mTOR axis as a potential therapeutic target.</p>
+                </article>
+
+                <article>
+                    <h3>Genomic and immune landscape of metastatic pheochromocytoma and paraganglioma</h3>
+                    <p>This research delineates the genomic alterations and immune profiles characteristic of metastatic pheochromocytoma and paraganglioma.</p>
+                </article>
+
+                <article>
+                    <h3>Molecular characterization of chromophobe renal cell carcinoma reveals mTOR pathway alterations in patients with poor outcome</h3>
+                    <p>This study identifies mTOR pathway alterations in chromophobe renal cell carcinoma patients associated with unfavorable prognoses.</p>
+                </article>
+            </div>
+
+            <!-- Dropdown for Other Collaborations -->
+            <div class="dropdown">
+                <h3>Other Collaborations</h3>
+            </div>
+            <div class="dropdown-content">
+                <article>
+                    <h3>Hsa-miR-139-5p is a prognostic thyroid cancer marker involved in HNRNPF-mediated alternative splicing</h3>
+                    <p>This research highlights hsa-miR-139-5p as a prognostic marker in thyroid cancer, implicating its role in alternative splicing through HNRNPF.</p>
+                </article>
+
+                <article>
+                    <h3>PTEN expression and mutations in TSC1, TSC2, and MTOR are associated with response to rapalogs in patients with renal cell carcinoma</h3>
+                    <p>This study associates PTEN expression and mutations in TSC1, TSC2, and MTOR with the therapeutic response to rapalogs in renal cell carcinoma patients.</p>
+                </article>
+
+                <article>
+                    <h3>Sunitinib and Evofosfamide (TH-302) in Systemic Treatment-Naïve Patients with Grade 1/2 Metastatic Pancreatic Neuroendocrine Tumors: The GETNE-1408 Trial</h3>
+                    <p>This clinical trial evaluates the efficacy of combining Sunitinib and Evofosfamide in treatment-naïve patients with metastatic pancreatic neuroendocrine tumors.</p>
+                </article>
+
+                <article>
+                    <h3>Prevalence of pathogenic germline variants in patients with metastatic renal cell carcinoma</h3>
+                    <p>This research investigates the frequency of pathogenic germline variants in individuals diagnosed with metastatic renal cell carcinoma.</p>
+                </article>
+
+                <article>
+                    <h3>Clinical pharmacogenetic analysis in 5,001 individuals with diagnostic Exome Sequencing data</h3>
+                    <p>This study conducts a pharmacogenetic analysis on exome sequencing data from 5,001 individuals to inform personalized medicine approaches.</p>
+                </article>
+
+                <article>
+                    <h3>Novel DNMT3A Germline Variant in a Patient with Multiple Paragangliomas and Papillary Thyroid Carcinoma</h3>
+                    <p>This case report identifies a novel germline DNMT3A mutation in a patient presenting with multiple paragangliomas and papillary thyroid carcinoma.</p>
+                </article>
+
+                <article>
+                    <h3>CD133 expression in medullary thyroid cancer cells identifies patients with poor prognosis</h3>
+                    <p>This research associates CD133 expression in medullary thyroid cancer cells with poorer patient outcomes.</p>
+                </article>
+
+                <article>
+                    <h3>Deubiquitinase USP9X loss sensitizes renal cancer cells to mTOR inhibition</h3>
+                    <p>This study demonstrates that loss of USP9X increases renal cancer cells' sensitivity to mTOR inhibitors.</p>
+                </article>
+
+                <article>
+                    <h3>Considerations on diagnosis and surveillance measures of PTEN hamartoma tumor syndrome: clinical and genetic study in a series of Spanish patients</h3>
+                    <p>This research provides insights into the diagnosis and monitoring of PTEN hamartoma tumor syndrome through a clinical and genetic study of Spanish patients.</p>
+                </article>
+
+                <article>
+                    <h3>PBRM1 and KDM5C cooperate to define high-angiogenesis tumors and increased antiangiogenic response in renal cancer</h3>
+                    <p>This study reveals that PBRM1 and KDM5C mutations characterize renal cancers with high angiogenesis and enhanced response to antiangiogenic therapies.</p>
+                </article>
+
+                <article>
+                    <h3>DLST mutations in pheochromocytoma and paraganglioma cause proteome hyposuccinylation and metabolic remodeling</h3>
+                    <p>This research indicates that DLST mutations in pheochromocytoma and paraganglioma lead to reduced protein succinylation and metabolic changes.</p>
+                </article>
+            </div>
         </section>
+        
     </main>
 
-    <footer>
+   <footer>
         <p>Contacto: <a href="mailto:javier.lanillos@ibb.csic.es">javier.lanillos@ibb.csic.es</a>  ORCID: <a href="https://orcid.org/0000-0002-5054-6007" target="_blank">0000-0002-5054-6007</a></p>
         <img src="images/CSIC_LOGO.svg" alt="Kindly generated by Dr. Emilio José" style="display: block; margin: 20px auto; max-width: 200px;">
     </footer>
