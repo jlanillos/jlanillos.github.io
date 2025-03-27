@@ -4,69 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javier Lanillos-Manchón</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            margin: 0;
-            padding: 0;
-            background-color: #e8f5e9;
-            color: #2e3b4e;
-        }
-        /* Header */
-        header {
-            background: #388e3c;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 22px;
-        }
-        /* Navigation */
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #2e7d32;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            margin: 0 15px;
-        }
-        nav a:hover {
-            background: #1b5e20;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-        img {
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
-            float: right;
-            margin: 20px;
-        }
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #388e3c;
-            color: white;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -74,28 +12,32 @@
         <p>Bioinformatician, Postdoctoral Researcher | Momentum Program | IBB-CSIC</p>
     </header>
     <nav>
-        <a href="#introduction">Introduction</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#skills">Skills</a>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
     </nav>
-    <div class="container" id="introduction">
-        <h2>Introduction</h2>
-        <img src="profile.jpg" alt="Javier Lanillos-Manchón">
-        <p>Short description about yourself (to be added).</p>
-    </div>
-    <div class="container" id="research">
-        <h2>Research</h2>
-        <p>Information about your research interests and projects.</p>
-    </div>
-    <div class="container" id="publications">
-        <h2>Publications</h2>
-        <p>List of your publications.</p>
-    </div>
-    <div class="container" id="skills">
-        <h2>Skills</h2>
-        <p>Overview of your key skills.</p>
-    </div>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <img src="images/profilepic.jpg" alt="Javier Lanillos-Manchón">
+            <p>Short description about yourself (to be added).</p>
+        </section>
+        <section id="research">
+            <h2>Research</h2>
+            <p>Information about your research interests and projects.</p>
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <p>List of your publications.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Overview of your key skills.</p>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2025 Javier Lanillos-Manchón. All Rights Reserved.</p>
     </footer>
