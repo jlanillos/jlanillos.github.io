@@ -69,7 +69,7 @@
         <section>
             <h2>Bioinformatics helped me to learn how to collaborate</h2>
             <!-- Dropdown for Highlighted Publications -->
-            <button class="dropdown">First-author publications presented in my PhD thesis</button>
+            <button class="dropdown">First-author publications presented in my PhD thesis <span class="arrow">▶</span></button>
             <div class="dropdown-content">
 
                 <article>
@@ -98,7 +98,7 @@
             </div>
 
             <!-- Dropdown for Highlighted Publications -->
-            <button class="dropdown">Highlighted Publications - Traslational pharmacogenomics</button>
+            <button class="dropdown">OHighlighted Publications - Traslational pharmacogenomics <span class="arrow">▶</span></button>
             <div class="dropdown-content">
 
                 <article>
@@ -147,7 +147,7 @@
             </div>
 
             <!-- Dropdown for Other Collaborations -->
-            <button class="dropdown">Other Collaborations within Genomics Medicine</button>
+            <button class="dropdown">Other Collaborations within Genomics Medicine <span class="arrow">▶</span></button>
             <div class="dropdown-content">
 
                 <article>
@@ -219,16 +219,19 @@
     </footer>
 
     <script>
-        // JavaScript to toggle dropdown visibility
         document.querySelectorAll('.dropdown').forEach(function(button) {
             button.addEventListener('click', function() {
                 const content = button.nextElementSibling;
-                if (content.style.display === "block") {
+                const arrow = button.querySelector('.arrow');
+                
+                if (button.classList.contains('expanded')) {
                     content.style.display = "none";
                     button.classList.remove('expanded');
+                    arrow.textContent = "▶"; // Right arrow when collapsed
                 } else {
                     content.style.display = "block";
                     button.classList.add('expanded');
+                    arrow.textContent = "▼"; // Down arrow when expanded
                 }
             });
         });

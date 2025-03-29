@@ -98,3 +98,15 @@ footer {
 main ul li {
     margin-bottom: 10px; /* Adds space between bullet points */
 }
+
+.dropdown::after {
+    content: "▶"; /* Right arrow */
+    font-size: 14px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.dropdown.expanded::after {
+    transform: rotate(90deg); /* Downward arrow when expanded */
+}
