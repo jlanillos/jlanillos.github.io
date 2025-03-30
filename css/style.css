@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     font-size: 18px;
@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Encabezado */
+/* Header */
 header {
     background: #AFCBD5;
     color: rgb(44, 44, 44);
@@ -35,14 +35,14 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Estilos para todos los enlaces */
+/* Hyperlink styles */
 a {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
 
-/* Sección principal */
+/* Main */
 main {
     max-width: 900px;
     margin: 40px auto;
@@ -67,7 +67,7 @@ main {
     margin: 20px;
 }
 
-/* Formulario de contacto */
+/* Contact */
 form label, 
 form input, 
 form textarea, 
@@ -86,7 +86,7 @@ form button {
     width: auto;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
