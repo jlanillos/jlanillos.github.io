@@ -110,3 +110,24 @@ main ul li {
 .dropdown.expanded::after {
     transform: rotate(90deg); /* Downward arrow when expanded */
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.icon {
+    width: 30px; /* Adjust size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
